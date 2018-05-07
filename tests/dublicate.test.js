@@ -1,5 +1,5 @@
 const fox = require('../pages/fox.page.js');
-const { assert } = require('chai');
+
 
 describe('Sample test', () => {
   it('Can open a page and sign up', () => {
