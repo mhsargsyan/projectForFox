@@ -1,0 +1,9 @@
+{
+  "search.exclude": {
+    "**/node_modules": true,
+    "**/context": true
+  },
+  "eslint.autoFixOnSave": true,
+  "eslint.enable": true,
+  "eslint.run": "onSave"
+}

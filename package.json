@@ -1,0 +1,48 @@
+{
+  "version": "1.0.0",
+  "description": "webdriverio-boilerplate",
+  "main": "",
+  "scripts": {
+    "test": "rm -rf ./excelFile/*; rm -rf ./lib/*; npm run test:fox; npm run report:open",
+    "report:open": "open ./excelFile/FoxShows.csv",
+    "test:fox": "cross-env SPEC=$SPEC ENV=$ENV wdio config/default.conf.js"
+  },
+  "devDependencies": {
+    "axios": "^0.17.1",
+    "babel-eslint": "^8.0.2",
+    "chai": "*",
+    "chai-string": "^1.4.0",
+    "cross-env": "^5.1.1",
+    "eslint": "^4.11.0",
+    "eslint-config-airbnb": "^15.1.0",
+    "eslint-config-prettier": "^2.7.0",
+    "eslint-plugin-import": "^2.8.0",
+    "eslint-plugin-jsx-a11y": "^5.1.1",
+    "eslint-plugin-prettier": "^2.3.1",
+    "eslint-plugin-react": "^7.4.0",
+    "eslint-plugin-webdriverio": "^1.0.1",
+    "mocha": "^2.2.5",
+    "mochawesome-report-generator": "^2.3.2",
+    "npm-run-all": "^4.1.2",
+    "opn": "^5.1.0",
+    "parallel-mocha": "*",
+    "prettier": "^1.8.2",
+    "wdio-junit-reporter": "^0.3.1",
+    "wdio-mocha-framework": "^0.3.10",
+    "wdio-mochawesome-reporter": "^1.1.1",
+    "wdio-sauce-service": "~0.4.4",
+    "wdio-selenium-standalone-service": "0.0.9",
+    "wdio-spec-reporter": "^0.1.3",
+    "webdriverio": "^4.10.2"
+  },
+  "license": "UNLICENSED",
+  "private": true,
+  "dependencies": {
+    "chance": "^1.0.16",
+    "exceljs": "^1.4.5",
+    "faker": "^4.1.0",
+    "wdio-testrail-reporter": "^1.1.5",
+    "xlsx": "^0.12.11"
+  },
+  "name": "testProject"
+}
