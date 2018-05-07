@@ -1,6 +1,6 @@
 {
   "version": "1.0.0",
-  "description": "webdriverio-boilerplate",
+  "description": "fox project",
   "main": "",
   "scripts": {
     "test": "rm -rf ./excelFile/*; rm -rf ./lib/*; npm run test:fox; npm run report:open",
